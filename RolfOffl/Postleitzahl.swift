@@ -12,7 +12,7 @@ class Postleitzahl: RegionRequest {
     
     init(_ location: CLLocation) {
 
-        query = "SELECT (plz || \" \" || note) as value FROM plz WHERE ST_Contains(Geometry, ST_Point(?,?))";
+        query = "SELECT note as value FROM plz WHERE ST_Contains(Geometry, ST_Point(?,?))";
 
         params = [
             BindParam(type: kBindingTypeDouble,
