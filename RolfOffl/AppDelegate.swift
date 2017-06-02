@@ -1,7 +1,4 @@
 //
-//  AppDelegate.swift
-//  RolfOffl
-//
 //  Created by Jo Brunner on 02.06.17.
 //  Copyright © 2017 Jo Brunner. All rights reserved.
 //
