@@ -186,10 +186,12 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if results.count > 0 {
             plzTextView.text = results.first!.plz
             landBundeslandLabel.text = results.first!.landBundesland
+            landkreisLabel.text = results.first!.landkreis
         }
         else {
             plzTextView.text = ""
             landBundeslandLabel.text = ""
+            landkreisLabel.text = ""
         }
 
         coordinatesLabel.text = location.coordinates
