@@ -1,4 +1,4 @@
-# rolfoffl
+# RolfOffl
 RolfOffl is a GIS-Experiment. It finds german ZIP codes on a german GPS position, offline. When the Device is outside of Germany, it knows it is not in Germany. Funny, hehe.
 
 The App is a little proof of concept using spatialite (a sqlite3 database with geospatial extension) on iOS devices. 
@@ -15,8 +15,7 @@ Licensed under the LGPL 2.1
 The App is written in Swift 4 with a wrapper written in C and Objective-C 2.0 to access spatialite/sqlite3 libraries.
 
 ## Pictures
-
-
+![ScreenShot](screenshot.png)
 
 ## Todo
 Settings section with Copyrights and License notes. Less funny.
