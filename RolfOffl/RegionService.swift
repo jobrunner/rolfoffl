@@ -13,15 +13,11 @@ protocol RegionRequest {
 
 class RegionService: NSObject {
     
-    func service(request: RegionRequest) -> String? {
-
+    func service(request: RegionRequest) -> [[String:String?]]? {
         if let region = RegionDatabase() {
-            
             do {
-                let result = try region.execute(request.query, with: request.params)
-                let item = result.first as? [String:String]
-                
-                return item?["value"]
+                let spatialiteResults = try region.execute(request.query, with: request.params)
+                return spatialiteResults as? [[String : String?]]
             } catch _ as NSError {}
         }
         

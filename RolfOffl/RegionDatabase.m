@@ -5,11 +5,6 @@
 
 @import CoreLocation;
 #import "RegionDatabase.h"
-
-//#include <sqlite3.h>
-//#include <spatialite/gaiageo.h>
-//#include <spatialite.h>
-
 #import <sqlite3.h>
 #import <spatialite/gaiageo.h>
 #import <spatialite.h>
@@ -41,7 +36,7 @@
     
     if ((self = [super init])) {
         
-        NSString *sqliteDbPath = [[NSBundle mainBundle] pathForResource:@"plz"
+        NSString *sqliteDbPath = [[NSBundle mainBundle] pathForResource:@"rolfoffl"
                                                                  ofType:@"sqlite"];
         return [self initWithDbPath:sqliteDbPath];
     }
@@ -53,7 +48,7 @@
 - (id)initWithDbPath:(NSString *)dbPath {
     
     if (self = [super init]) {
-        
+
         int ret = sqlite3_open_v2([dbPath UTF8String],
                                   &_connection,
                                   SQLITE_OPEN_READONLY,
@@ -105,7 +100,7 @@
     
     int n_columns = sqlite3_column_count(stmt);
     
-    NSMutableArray *result = [NSMutableArray new];
+    NSMutableArray *results = [NSMutableArray new];
     
     while (YES) {
         ret = sqlite3_step(stmt);
@@ -116,22 +111,42 @@
         }
         
         if (ret == SQLITE_ROW) {
+            
+            NSMutableDictionary *columns = [NSMutableDictionary new];
+
             for (int ic = 0; ic < n_columns; ic++) {
+
+                int columnType = sqlite3_column_type(stmt, ic);
                 
-                if (sqlite3_column_type(stmt, ic) == SQLITE_TEXT) {
-                    NSString *key = [NSString stringWithUTF8String:(char *)sqlite3_column_name(stmt, ic)];
-                    NSString *value = [NSString stringWithUTF8String:(char *)sqlite3_column_text(stmt, ic)];
-                    NSDictionary *row = [NSDictionary dictionaryWithObject:value forKey:key];
-                    
-                    [result addObject:row];
+                switch (columnType) {
+                    case SQLITE_INTEGER: {
+                        NSString *key = [NSString stringWithUTF8String:(char *)sqlite3_column_name(stmt, ic)];
+                        NSString *value = [NSString stringWithFormat:@"%d", sqlite3_column_int(stmt, ic)];
+                        [columns setObject:value forKey:key];
+                        break;
+                    }
+                        
+                    case SQLITE_TEXT: {
+                        NSString *key = [NSString stringWithUTF8String:(char *)sqlite3_column_name(stmt, ic)];
+                        NSString *value = [NSString stringWithUTF8String:(char *)sqlite3_column_text(stmt, ic)];
+                        [columns setObject:value forKey:key];
+                        break;
+                    }
+                    case SQLITE_NULL: {
+                        NSString *key = [NSString stringWithUTF8String:(char *)sqlite3_column_name(stmt, ic)];
+                        NSString *value = @"";
+                        [columns setObject:value forKey:key];
+                        break;
+                    }
                 }
             }
+            [results addObject:columns];
         }
     }
     
     *error = nil;
     
-    return result.mutableCopy;
+    return results.mutableCopy;
 }
 
 
