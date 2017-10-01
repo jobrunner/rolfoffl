@@ -1,4 +1,7 @@
 # RolfOffl
+
+[![Build Status](https://travis-ci.org/jobrunner/rolfoffl.svg?branch=master)](https://travis-ci.org/jobrunner/rolfoffl)
+
 RolfOffl is a GIS-Experiment. It finds german ZIP codes on a german GPS position, offline. When the Device is outside of Germany, it knows it is not in Germany. Funny, hehe.
 
 The App is a little proof of concept using spatialite (a sqlite3 database with geospatial extension) on iOS devices. 
