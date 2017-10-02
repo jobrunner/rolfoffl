@@ -1,6 +1,10 @@
 language: objective-c
-os: osx
 osx_image: xcode9
-xcode_project: RolfOffl.xcodeproj
-xcode_scheme: RolfOfflTests
-xcode_sdk: iphonesimulator11.0
+env:
+    global:
+        - APP_NAME="RolfOffl"
+        - XCODE_SCHEME="$APP_NAME"
+        - UNIT_TEST_SCHEME="${XCODE_SCHEME}Tests"
+        - PROJECT_DIRECTORY="$PWD/"
+script:
+  - xcodebuild -project $PROJECT_DIRECTORY$APP_NAME.xcodeproj -scheme UNIT_TEST_SCHEME -sdk iphonesimulator11.0 -destination 'platform=iOS Simulator,name=iPhone SE,OS=10.0' test | xcpretty
