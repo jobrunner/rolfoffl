@@ -13,6 +13,7 @@
 		24C29A461F7F141A0070B016 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C29A451F7F141A0070B016 /* LocationViewModel.swift */; };
 		24C29A481F7F150D0070B016 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C29A471F7F150D0070B016 /* Formatter.swift */; };
 		24C29A4A1F7FC63E0070B016 /* LastResultsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C29A491F7FC63E0070B016 /* LastResultsCache.swift */; };
+		24C29A4D1F822C240070B016 /* AppColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C29A4C1F822C240070B016 /* AppColorTests.swift */; };
 		24C9BD831F0410F500092E81 /* RegionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9BD821F0410F500092E81 /* RegionTableViewCell.swift */; };
 		24DC67BF1EE195CC00B90F06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC67BE1EE195CC00B90F06 /* AppDelegate.swift */; };
 		24DC67C11EE195CC00B90F06 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC67C01EE195CC00B90F06 /* MainViewController.swift */; };
@@ -75,6 +76,7 @@
 		24C29A451F7F141A0070B016 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		24C29A471F7F150D0070B016 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		24C29A491F7FC63E0070B016 /* LastResultsCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastResultsCache.swift; sourceTree = "<group>"; };
+		24C29A4C1F822C240070B016 /* AppColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorTests.swift; sourceTree = "<group>"; };
 		24C9BD821F0410F500092E81 /* RegionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionTableViewCell.swift; sourceTree = "<group>"; };
 		24DC67BB1EE195CC00B90F06 /* RolfOffl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RolfOffl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DC67BE1EE195CC00B90F06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -588,8 +590,9 @@
 		24DC67D21EE195CD00B90F06 /* RolfOfflTests */ = {
 			isa = PBXGroup;
 			children = (
-				24DC67D31EE195CD00B90F06 /* RolfOfflTests.swift */,
 				24DC67D51EE195CD00B90F06 /* Info.plist */,
+				24DC67D31EE195CD00B90F06 /* RolfOfflTests.swift */,
+				24C29A4C1F822C240070B016 /* AppColorTests.swift */,
 			);
 			path = RolfOfflTests;
 			sourceTree = "<group>";
@@ -1501,6 +1504,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24DC67D41EE195CD00B90F06 /* RolfOfflTests.swift in Sources */,
+				24C29A4D1F822C240070B016 /* AppColorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
