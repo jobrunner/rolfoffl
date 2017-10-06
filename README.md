@@ -1,6 +1,9 @@
 # RolfOffl
 
 [![Build Status](https://travis-ci.org/jobrunner/rolfoffl.svg?branch=master)](https://travis-ci.org/jobrunner/rolfoffl)
+![Swift version](https://img.shields.io/badge/swift-4.0-orange.svg)
+![Objective-C 2.0](https://img.shields.io/badge/Objective--C-2.0-orange.svg)
+![LGPL 2.1](https://img.shields.io/badge/license-LGPL%202.1-blue.svg)
 
 RolfOffl is a GIS-Experiment. It finds german ZIP codes on a german GPS position, offline. When the Device is outside of Germany, it knows it is not in Germany. Funny, hehe.
 
