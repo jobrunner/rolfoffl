@@ -24,4 +24,5 @@ The App is written in Swift 4 with a wrapper written in C and Objective-C 2.0 to
 ![ScreenShot](screenshot.png)
 
 ## Todo
-Settings section with Copyrights and License notes. Less funny.
+- Settings section with Copyrights and License notes. Less funny.
+- A simple Map showing/hightlighting the region of found PLZ.
