@@ -1,7 +1,7 @@
 import UIKit
 import CoreLocation
 
-final class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+final class MainViewController: UIViewController, UITableViewDelegate {
     
     lazy var locationManager: CLLocationManager = {
         let lm = CLLocationManager()
@@ -45,7 +45,13 @@ final class MainViewController: UIViewController, UITableViewDataSource, UITable
         transitionState = TransitionState()
         updateUI()
     }
-    
+
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+
+
+
     func updateUI() {
 
         if results.count > 0 {
@@ -142,28 +148,31 @@ final class MainViewController: UIViewController, UITableViewDataSource, UITable
     }
 
     
-    // MAKRK: - TableView Delegates
+}
+
+// MARK: - TableView Data Source
+
+extension MainViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         let cellId = "plzregioncell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId,
-                                                    for:indexPath) as! RegionTableViewCell
-        
+                                                 for:indexPath) as! RegionTableViewCell
+
         cell.ortLabel.text = results[indexPath.row].ort
-        
+
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        
+
         return results.count
     }
+
 }
-
-
 extension MainViewController: CLLocationManagerDelegate {
     
     // MARK: - CLocation Manager Delegates

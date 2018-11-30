@@ -10,6 +10,7 @@
 		2496E36121B15F6800018ED5 /* TransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2496E35E21B15F6800018ED5 /* TransitionState.swift */; };
 		2496E36221B15F6800018ED5 /* AppText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2496E35F21B15F6800018ED5 /* AppText.swift */; };
 		2496E36321B15F6800018ED5 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2496E36021B15F6800018ED5 /* AppColor.swift */; };
+		2496E36521B16CA700018ED5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2496E36421B16CA700018ED5 /* DetailViewController.swift */; };
 		24BD8BFF1EE309EA00A7ED87 /* Toaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD8BFE1EE309EA00A7ED87 /* Toaster.swift */; };
 		24BD8C041EE54AF900A7ED87 /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD8C031EE54AF900A7ED87 /* UIView+Extention.swift */; };
 		24C29A441F7EC6BC0070B016 /* PostleitzahlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C29A431F7EC6BC0070B016 /* PostleitzahlViewModel.swift */; };
@@ -71,6 +72,7 @@
 		2496E35E21B15F6800018ED5 /* TransitionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionState.swift; sourceTree = "<group>"; };
 		2496E35F21B15F6800018ED5 /* AppText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppText.swift; sourceTree = "<group>"; };
 		2496E36021B15F6800018ED5 /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		2496E36421B16CA700018ED5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		24BD8BFB1EE2DBDE00A7ED87 /* Office.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Office.gpx; sourceTree = "<group>"; };
 		24BD8BFE1EE309EA00A7ED87 /* Toaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toaster.swift; sourceTree = "<group>"; };
 		24BD8C021EE3E72300A7ED87 /* Kasbach-Ohlenberg.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Kasbach-Ohlenberg.gpx"; sourceTree = "<group>"; };
@@ -590,6 +592,7 @@
 				24C29A421F7EC1010070B016 /* Sibirien.gpx */,
 				24C29A471F7F150D0070B016 /* Formatter.swift */,
 				24C29A491F7FC63E0070B016 /* LastResultsCache.swift */,
+				2496E36421B16CA700018ED5 /* DetailViewController.swift */,
 			);
 			path = RolfOffl;
 			sourceTree = "<group>";
@@ -1497,6 +1500,7 @@
 				24DC69D91EE1A26B00B90F06 /* RegionService.swift in Sources */,
 				2496E36121B15F6800018ED5 /* TransitionState.swift in Sources */,
 				24C29A461F7F141A0070B016 /* LocationViewModel.swift in Sources */,
+				2496E36521B16CA700018ED5 /* DetailViewController.swift in Sources */,
 				24C29A481F7F150D0070B016 /* Formatter.swift in Sources */,
 				24C29A4A1F7FC63E0070B016 /* LastResultsCache.swift in Sources */,
 				24C9BD831F0410F500092E81 /* RegionTableViewCell.swift in Sources */,
