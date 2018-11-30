@@ -7,5 +7,6 @@ class RegionTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         
         super.awakeFromNib()
+        backgroundColor = UIColor.red
     }
 }
