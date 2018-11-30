@@ -13,7 +13,6 @@
 		24C29A461F7F141A0070B016 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C29A451F7F141A0070B016 /* LocationViewModel.swift */; };
 		24C29A481F7F150D0070B016 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C29A471F7F150D0070B016 /* Formatter.swift */; };
 		24C29A4A1F7FC63E0070B016 /* LastResultsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C29A491F7FC63E0070B016 /* LastResultsCache.swift */; };
-		24C29A4D1F822C240070B016 /* AppColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C29A4C1F822C240070B016 /* AppColorTests.swift */; };
 		24C9BD831F0410F500092E81 /* RegionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9BD821F0410F500092E81 /* RegionTableViewCell.swift */; };
 		24DC67BF1EE195CC00B90F06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC67BE1EE195CC00B90F06 /* AppDelegate.swift */; };
 		24DC67C11EE195CC00B90F06 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC67C01EE195CC00B90F06 /* MainViewController.swift */; };
@@ -76,7 +75,6 @@
 		24C29A451F7F141A0070B016 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		24C29A471F7F150D0070B016 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		24C29A491F7FC63E0070B016 /* LastResultsCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastResultsCache.swift; sourceTree = "<group>"; };
-		24C29A4C1F822C240070B016 /* AppColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorTests.swift; sourceTree = "<group>"; };
 		24C9BD821F0410F500092E81 /* RegionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionTableViewCell.swift; sourceTree = "<group>"; };
 		24DC67BB1EE195CC00B90F06 /* RolfOffl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RolfOffl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DC67BE1EE195CC00B90F06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -592,7 +590,6 @@
 			children = (
 				24DC67D51EE195CD00B90F06 /* Info.plist */,
 				24DC67D31EE195CD00B90F06 /* RolfOfflTests.swift */,
-				24C29A4C1F822C240070B016 /* AppColorTests.swift */,
 			);
 			path = RolfOfflTests;
 			sourceTree = "<group>";
@@ -1404,19 +1401,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Jo Brunner";
 				TargetAttributes = {
 					24DC67BA1EE195CC00B90F06 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = L79BTFY6FV;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = "";
 						ProvisioningStyle = Automatic;
 					};
 					24DC67CE1EE195CD00B90F06 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = L79BTFY6FV;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = "";
 						ProvisioningStyle = Automatic;
 						TestTargetID = 24DC67BA1EE195CC00B90F06;
 					};
@@ -1504,7 +1501,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				24DC67D41EE195CD00B90F06 /* RolfOfflTests.swift in Sources */,
-				24C29A4D1F822C240070B016 /* AppColorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1551,6 +1547,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1558,6 +1555,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1607,6 +1605,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1614,6 +1613,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1664,7 +1664,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "RolfOffl/RolfOffl-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1688,7 +1688,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RolfOffl/RolfOffl-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1709,7 +1709,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RolfOffl/RolfOffl-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RolfOffl.app/RolfOffl";
 			};
 			name = Debug;
@@ -1731,7 +1731,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RolfOffl/RolfOffl-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RolfOffl.app/RolfOffl";
 			};
 			name = Release;

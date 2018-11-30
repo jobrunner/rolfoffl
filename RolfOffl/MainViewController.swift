@@ -136,7 +136,7 @@ enum TransitionState: Int {
     }
 }
 
-class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+final class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     lazy var locationManager: CLLocationManager = {
         let lm = CLLocationManager()
