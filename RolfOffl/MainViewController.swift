@@ -207,7 +207,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             infoLabel.text = AppText.noDataInfo.text
         }
 
-        fireButton.setTitle(transitionState.fireButtonText(), for: UIControlState.normal)
+        fireButton.setTitle(transitionState.fireButtonText(), for: UIControl.State.normal)
         fireButton.setTitleColor(transitionState.fireButtonTextColor(), for: .normal)
         fireButton.isEnabled = transitionState.fireButtonIsEnabled()
         transitionState.visibility(view: plzTextView, withData: location.hasData)
@@ -243,7 +243,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func alertUserToSettings() {
 
         func settingsHandler(_ action: UIAlertAction){
-            UIApplication.shared.open(URL(string:UIApplicationOpenSettingsURLString)!)
+            UIApplication.shared.open(URL(string:UIApplication.openSettingsURLString)!)
         }
         
         
@@ -251,7 +251,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
                                                 message: AppText.alertLocationServiceMessage.text,
                                                 preferredStyle: .alert)
         
-        let url = URL(string:UIApplicationOpenSettingsURLString)
+        let url = URL(string:UIApplication.openSettingsURLString)
 
         if UIApplication.shared.canOpenURL(url!) {
 
