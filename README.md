@@ -1,6 +1,9 @@
 # RolfOffl
 
 [![Build Status](https://travis-ci.org/jobrunner/rolfoffl.svg?branch=master)](https://travis-ci.org/jobrunner/rolfoffl)
+![Swift version](https://img.shields.io/badge/swift-4.0-orange.svg)
+![Objective-C 2.0](https://img.shields.io/badge/Objective--C-2.0-orange.svg)
+![LGPL 2.1](https://img.shields.io/badge/license-LGPL%202.1-blue.svg)
 
 RolfOffl is a GIS-Experiment. It finds german ZIP codes on a german GPS position, offline. When the Device is outside of Germany, it knows it is not in Germany. Funny, hehe.
 
@@ -21,4 +24,5 @@ The App is written in Swift 4 with a wrapper written in C and Objective-C 2.0 to
 ![ScreenShot](screenshot.png)
 
 ## Todo
-Settings section with Copyrights and License notes. Less funny.
+- Settings section with Copyrights and License notes. Less funny.
+- A simple Map showing/hightlighting the region of found PLZ.
